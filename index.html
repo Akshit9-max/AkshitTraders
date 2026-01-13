@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akshit Traders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Akshit Traders</h1>
+  <button onclick="openLogin()">Admin Login</button>
+</header>
+
+<main id="shop"></main>
+
+<!-- LOGIN -->
+<div id="loginBox" class="popup hidden">
+  <h2>Admin Login</h2>
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="adminPanel" class="popup hidden">
+  <div class="popup-header">
+    <h2>Admin Panel</h2>
+    <button onclick="closeAdmin()">✖</button>
+  </div>
+  <input id="pname" placeholder="Product name">
+  <input id="pprice" placeholder="Price">
+  <input id="pimg" placeholder="Image URL">
+  <button onclick="addProduct()">Add Product</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
